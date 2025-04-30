@@ -13,6 +13,9 @@ img{
   max-width:100%;
   white-space:pre-wrap;
 }
+#nav{
+  border-top:dashed 1px #222;
+}
 noscript{
   color:red;
   font-weight:bold;
