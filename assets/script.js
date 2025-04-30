@@ -1,4 +1,4 @@
-use strict;
+'use strict';
 const App={
   fx:{
     buildNav:function(){
