@@ -1,0 +1,19 @@
+body{
+  color:#222;
+  font-size:1rem;
+  line-height:2;
+}
+a:link,a:visited{
+  color:#22f;
+}
+img{
+  max-width:100%;
+}
+.markdown-raw{
+  max-width:100%;
+  white-space:pre-wrap;
+}
+noscript{
+  color:red;
+  font-weight:bold;
+}
