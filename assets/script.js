@@ -50,4 +50,4 @@ const App={
 `
   }
 }
-window.onload=App.fx.buildNav
+window.onload=App.fx.buildNav();
