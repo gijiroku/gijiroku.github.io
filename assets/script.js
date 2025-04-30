@@ -14,8 +14,8 @@ const App={
 
 2025年
 
-- <a href="/report/250428">2025年4月28日 議案</a>
-- <a href="/report/250413">2025年4月13日 議案</a>
+- <a href="/report/250428">2025年4月28日 議題</a>
+- <a href="/report/250413">2025年4月13日 議題</a>
 - <a href="/report/250301">2025年3月1日 議事録</a>
 
 2024年
@@ -44,7 +44,7 @@ const App={
 
 - <a href="/report/250331">2024年度の出席簿</a>
 - <a href="/report/240519">教室マニュアル</a>
-- <a href="/report/220830">「あいうえお教室」 蔵書一覧</a>
+- <a href="/report/220830">教室蔵書一覧</a>
 
 <a href="/">Homeへ戻る</a>
 `
