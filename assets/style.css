@@ -3,8 +3,14 @@ body{
   font-size:1rem;
   line-height:2;
 }
+a{
+  text-underline-offset: 0.3ex;
+}
 a:link,a:visited{
   color:#22f;
+}
+a:hover{
+  color:#f22;
 }
 img{
   max-width:100%;
@@ -13,8 +19,34 @@ img{
   max-width:100%;
   white-space:pre-wrap;
 }
+q{
+  background-color:#eee;
+}
+q::before,
+q::after{
+  content:'';
+}
+.has-quote-only{
+  margin-bottom:.2rem;
+}
+.has-quote-only:has(+:not(.has-quote-only)){
+  margin-bottom:1rem;
+}
+.has-quote-only+.has-quote-only{
+  margin-top:0;
+}
 #nav{
   border-top:dashed 1px #222;
+}
+.current{
+  font-weight:bold;
+  position:relative;
+}
+.current::after{
+  color:#a22;
+  content:'(\2190\4ECA\3053\3053)';
+  display:inline-block;
+  margin-left:.3rem;
 }
 noscript{
   color:red;
