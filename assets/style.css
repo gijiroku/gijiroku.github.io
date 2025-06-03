@@ -3,8 +3,12 @@ body{
   font-size:1rem;
   line-height:2;
 }
+h2,
+h3:not(h2+h3){
+  margin-top:2rem;
+}
 a{
-  text-underline-offset: 0.3ex;
+  text-underline-offset:.3ex;
 }
 a:link,a:visited{
   color:#22f;
@@ -47,6 +51,9 @@ q::after{
   content:'(\2190\4ECA\3053\3053)';
   display:inline-block;
   margin-left:.3rem;
+}
+#nav{
+  margin:3rem 0 0;
 }
 noscript{
   color:red;

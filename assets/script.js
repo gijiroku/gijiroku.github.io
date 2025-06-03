@@ -45,7 +45,9 @@ App.data.nav=`
 
 ## 情報共有
 
+- <a href="/report/250523">250523mail 代表とNo.5</a>
 - <a href="/report/250425">250425 No.5の会議前の意見</a>
+- <a href="/report/250416">250416mail 代表とNo.5</a>
 - <a href="/report/250326">250326mail 代表とNo.5</a>
 - <a href="/report/241208">241208支援者に関するNo.5の所感</a>
 - <a href="/report/240609">240609名簿管理に関するNo.5の所感</a>
@@ -55,6 +57,7 @@ App.data.nav=`
 - <a href="/report/250331">2024年度の出席簿</a>
 - <a href="/report/240519">教室マニュアル</a>
 - <a href="/report/220830">教室蔵書一覧</a>
+- <a href="/report/links">日本語学習リンク集</a>
 
 <a href="/">Homeへ戻る</a>
 
