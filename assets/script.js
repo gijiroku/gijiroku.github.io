@@ -48,6 +48,9 @@ App.data.nav=`
 
 ## 情報共有
 
+- <a href="/report/250727">250727代表に対するNo.5の所感</a>
+- <a href="/report/250625">250625mail 役人</a>
+- <a href="/report/250609">250609mail 役人とNo.5</a>
 - <a href="/report/250523">250523mail 代表とNo.5</a>
 - <a href="/report/250425">250425 No.5の会議前の意見</a>
 - <a href="/report/250416">250416mail 代表とNo.5</a>
@@ -61,6 +64,7 @@ App.data.nav=`
 - <a href="/report/240519">教室マニュアル</a>
 - <a href="/report/220830">教室蔵書一覧</a>
 - <a href="/report/links">日本語学習リンク集</a>
+- <a href="/report/volunteer">ボランティアの定義</a>
 
 <a href="/">Homeへ戻る</a>
 
