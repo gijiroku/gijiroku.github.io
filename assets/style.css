@@ -14,6 +14,9 @@ summary:hover{
   color:#f22;
   cursor:pointer;
 }
+summary{
+  color:#007ea8;
+}
 img{
   max-width:100%;
 }
