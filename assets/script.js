@@ -1,358 +1,176 @@
 'use strict';
-const App={
-  config:{},
-  data:{},
-  dom:{
-    byId:{},
-    byTag:{},
-    byClass:{},
-  },
-  fn:{
-    matcher:{},//model
-    view:{},
-    parser:{},
-    controller:{},
-  },
-}
 
-App.data.nav=`
-<nav id="nav" class="markdown-raw">
-## 議事録
+(function(){
 
-各資料内の個人名は<a href="/report/250331">2024年度の出席簿</a>のNo.に置き替えています（代表と役人さんは除く）。
-
-2025年
-
-- <a href="/report/250604-3">2025年6月4日 議事録2</a>
-- <a href="/report/250604-2">2025年6月4日 議事録</a>
-- <a href="/report/250604">2025年6月4日 議題</a>
-- <a href="/report/250428-2">2025年4月28日 議事録</a>
-- <a href="/report/250428">2025年4月28日 議題</a>
-- <a href="/report/250413">2025年4月13日 議題</a>
-- <a href="/report/250301">2025年3月1日 議事録</a>
-
-2024年
-
-- <a href="/report/240817">2024年8月17日 議事録</a>
-- <a href="/report/240725-2">2024年7月25日 議事録</a>
-- <a href="/report/240725">2024年7月25日 議題</a>
-- <a href="/report/240721">2024年7月21日 議事録</a>
-- <a href="/report/240201">2024年2月1日 議題</a>
-- <a href="/report/240112">2024年1月12日 議事録</a>
-
-2023年以前
-
-- <a href="/report/231219">2023年12月19日 議事録</a>
-- <a href="/report/231030">2023年10月30日 議題</a>
-- <a href="/report/200901">2020年9月 国際交流ニュースからの引用</a>
-
-## 情報共有
-
-- <a href="/report/250727">250727代表に対するNo.5の所感</a>
-- <a href="/report/250625">250625mail 役人</a>
-- <a href="/report/250609">250609mail 役人とNo.5</a>
-- <a href="/report/250523">250523mail 代表とNo.5</a>
-- <a href="/report/250425">250425 No.5の会議前の意見</a>
-- <a href="/report/250416">250416mail 代表とNo.5</a>
-- <a href="/report/250326">250326mail 代表とNo.5</a>
-- <a href="/report/241208">241208支援者に関するNo.5の所感</a>
-- <a href="/report/240609">240609名簿管理に関するNo.5の所感</a>
-
-## 資料
-
-- <a href="/report/250331">2024年度の出席簿</a>
-- <a href="/report/240519">教室マニュアル</a>
-- <a href="/report/220830">教室蔵書一覧</a>
-- <a href="/report/links">日本語学習リンク集</a>
-- <a href="/report/volunteer">ボランティアの定義</a>
-
-<a href="/">Homeへ戻る</a>
-
-当サイトのQRコード
-
-<picture><source srcset="/img/common/qrcode_gijiroku.github.io.webp" type="image/webp"><img src="/img/common/qrcode_gijiroku.github.io.png" alt="gijiroku.github.ioのQRコード" width="270" height="270" loading="lazy" decoding="async"></picture>
+const reportNav=`
+<h2>議事録</h2>
+<p>各資料内の個人名は<a href="/report/250331">2024年度の出席簿</a>のNo.に置き替えています（代表と役人さんは除く）。</p>
+<p>2025年</p>
+<ul>
+<li><a href="/report/250604-3">2025年6月4日 議事録2</a></li>
+<li><a href="/report/250604-2">2025年6月4日 議事録</a></li>
+<li><a href="/report/250604">2025年6月4日 議題</a></li>
+<li><a href="/report/250428-2">2025年4月28日 議事録</a></li>
+<li><a href="/report/250428">2025年4月28日 議題</a></li>
+<li><a href="/report/250413">2025年4月13日 議題</a></li>
+<li><a href="/report/250301">2025年3月1日 議事録</a></li>
+</ul>
+<p>2024年</p>
+<ul>
+<li><a href="/report/240817">2024年8月17日 議事録</a></li>
+<li><a href="/report/240725-2">2024年7月25日 議事録</a></li>
+<li><a href="/report/240725">2024年7月25日 議題</a></li>
+<li><a href="/report/240721">2024年7月21日 議事録</a></li>
+<li><a href="/report/240201">2024年2月1日 議題</a></li>
+<li><a href="/report/240112">2024年1月12日 議事録</a></li>
+</ul>
+<p>2023年以前</p>
+<ul>
+<li><a href="/report/231219">2023年12月19日 議事録</a></li>
+<li><a href="/report/231030">2023年10月30日 議題</a></li>
+<li><a href="/report/200901">2020年9月 国際交流ニュースからの引用</a></li>
+</ul>
+<h2>情報共有</h2>
+<ul>
+<li><a href="/report/250727">250727代表に対するNo.5の所感</a></li>
+<li><a href="/report/250625">250625mail 役人</a></li>
+<li><a href="/report/250609">250609mail 役人とNo.5</a></li>
+<li><a href="/report/250523">250523mail 代表とNo.5</a></li>
+<li><a href="/report/250425">250425 No.5の会議前の意見</a></li>
+<li><a href="/report/250416">250416mail 代表とNo.5</a></li>
+<li><a href="/report/250326">250326mail 代表とNo.5</a></li>
+<li><a href="/report/241208">241208支援者に関するNo.5の所感</a></li>
+<li><a href="/report/240609">240609名簿管理に関するNo.5の所感</a></li>
+</ul>
+<h2>資料</h2>
+<ul>
+<li><a href="/report/250331">2024年度の出席簿</a></li>
+<li><a href="/report/240519">教室マニュアル</a></li>
+<li><a href="/report/220830">教室蔵書一覧</a></li>
+<li><a href="/report/links">日本語学習リンク集</a></li>
+<li><a href="/report/volunteer">ボランティアの定義</a></li>
+</ul>
+<p><a href="/">Homeへ戻る</a></p>
+<p>当サイトのQRコード</p>
+<p><img src="/img/common/qrcode_gijiroku.github.io.nav.png" alt="gijiroku.github.ioのQRコード" width="300" height="300" loading="lazy" decoding="async"></p>
 `;
 
-App.fn.view.buildNav=function(){
-  document.getElementById('main').insertAdjacentHTML('afterend',App.data.nav);
+const filNav=`
+<ul>
+<li><a href="/fil/20">20: Aking Araw わたしの いちにち My Day</a></li>
+<li><a href="/fil/22">22: Pamimili かいもの Shopping</a></li>
+<li><a href="/fil/24">24: Magandang Almusal すてきな あさごはん Good Breakfast</a></li>
+<li><a href="/fil/26">26: Ang mahalagang lugar ko わたしの たいせつな ばしょ My important place</a></li>
+<li><a href="/fil/28">28: Hapon na anime にほんの アニメ Japanese anime</a></li>
+<li><a href="/fil/30">30: Aking Bayan わたしの まち My Town</a></li>
+<li><a href="/fil/32">32: Amusement Park ゆうえんち</a></li>
+<li><a href="/fil/34">34: Case ng phone at payong スマホケース と かさ Smartphone case and umbrella</a></li>
+<li><a href="/fil/36">36: Shopping mall ショッピングモール</a></li>
+<li><a href="/fil/38">38: Ang aking bayan, Da Nang わたしの まち ダナン My town, Da Nang</a></li>
+</ul>
+<p><img src="/img/common/qrcode_gijiroku.github.io.fil.nav.png" alt="gijiroku.github.ioのQRコード" width="300" height="300" loading="lazy" decoding="async"></p>
+`;
+
+const scriptList=[];
+let domain=location.domain;
+let local=false;
+let path='';
+
+function renderNav(){
+  const nav=document.getElementById('nav');
+  const url=location.href;
+  if(url.indexOf('http')!==0){
+    const arr=url.split('/');
+    let localPath='';
+    for(let i=0;i<7;i++){
+      if(i!=0){
+        localPath+='/';
+      }
+      localPath+=arr[i];
+    }
+    domain=localPath;
+    local=true;
+  }
+  path=url.split(domain)[1];
+  let subDir=path.split('/')[1];
+  let navContent=reportNav;
+  if(subDir=='fil'){
+    navContent=filNav;
+  }
+  nav.innerHTML=navContent;
 }
 
-App.dom.byTag.navLinks=function(){
-  return document.getElementById('nav').getElementsByTagName('a');
-};
-
-App.dom.byId.canonicalPath=function(){
+function canonicalPath(){
   const canonical=document.getElementById('canonical');
   if(!canonical)return '';
   const url=canonical.getAttribute('href');
   const origin=location.origin;
   if(url.indexOf(origin)!==0)return '';
   return url.substring(origin.length);
-};
+}
 
-App.fn.view.markCurrentPage=function(){
-  const links=App.dom.byTag.navLinks();
-  const currentPath=App.dom.byId.canonicalPath();
+function markCurrentPage(){
+  const links=document.getElementById('nav').getElementsByTagName('a');
+  const currentPath=canonicalPath();
   for(let i=0;i<links.length;i++){
     const linkPath=links[i].getAttribute('href');
     if(linkPath===currentPath){
       links[i].classList.add('current');
     }
   }
-};
+}
 
-App.config.rawTags=['pre','script','style','textarea','xmp','noscript','iframe'];
-
-App.dom.byClass.markdownRawElements=document.getElementsByClassName('markdown-raw');
-
-App.fn.controller.convertMarkdown=function(text){
-  return App.fn.matcher.convertMarkdown(text);
-};
-
-App.fn.matcher.state={
-  listStack:[],
-  indentStack:[],
-  insideRawBlock:false
-};
-
-App.fn.matcher.isRawStart=function(line){
-  return App.config.rawTags.some(tag=>
-    new RegExp('^<'+tag+'\\b','i').test(line)
-  );
-};
-
-App.fn.matcher.isRawEnd=function(line){
-  return App.config.rawTags.some(tag=>
-    new RegExp('^</'+tag+'>','i').test(line)
-  );
-};
-
-App.fn.matcher.isHorizontalRule=function(line){
-  return /^---+/.test(line);
-};
-
-App.fn.matcher.isHeading=function(line){
-  return /^#{1,6} /.test(line);
-};
-
-App.fn.matcher.isBlockquote=function(line){
-  const normalized=App.fn.matcher.normalizeEntities(line);
-  return normalized.startsWith('>');
-};
-
-App.fn.matcher.isTableStart=function(lines,i){
-  const line=lines[i];
-  const next=lines[i+1];
-  return line.includes('|')&&next&&/^[:\-| ]+$/.test(next.trim());
-};
-
-App.fn.matcher.isListItem=function(line){
-  return /^[-*] |^\d+\. /.test(line);
-};
-
-App.fn.matcher.normalizeEntities=function(text){
-  return text
-    .replace(/&gt;|&#62;/g,'>')
-    .replace(/&lt;|&#60;/g,'<')
-    .replace(/&amp;|&#38;/g,'&')
-    .replace(/&quot;|&#34;/g,'"')
-    .replace(/&apos;|&#39;/g,"'")
-    .replace(/&nbsp;|&#160;/g,' ');
-};
-
-App.fn.view.renderHeading=function(line){
-  const count=line.match(/^#+/)[0].length;
-  const content=line.replace(/^#+\s*/, '');
-  return '<h'+count+'>'+content+'</h'+count+'>';
-};
-
-App.fn.view.renderBlockquote=function(line){
-  return '<p class="has-quote-only"><q>'+line+'</q></p>';
-};
-
-App.fn.view.renderTable=function(tableLines){
-  const[headerLine,alignLine,...bodyLines]=tableLines;
-  const headers=headerLine.split('|').map(h=>h.trim());
-  const aligns=alignLine.split('|').map(a=>{
-    a=a.trim();
-    if(/^:-+:$/.test(a))return 'center';
-    if(/^:-+$/.test(a))return 'left';
-    if(/^-+:$/.test(a))return 'right';
-    return 'initial';
-  });
-
-  let html='<table>\n<thead><tr>';
-  for(let i=0;i<headers.length;i++){
-    html+='<th style="text-align:'+aligns[i]+';">'+headers[i]+'</th>';
+function removeUrlParams(){
+  const hasParams=location.search.length>0;
+  const isHistorySupported=typeof history.replaceState==='function';
+  if(hasParams&&isHistorySupported){
+    const urlWithoutParams=location.origin+location.pathname;
+    history.replaceState(null,'',urlWithoutParams);
   }
-  html+='</tr></thead>\n<tbody>';
-  for(const row of bodyLines){
-    const cells=row.split('|').map(c=>c.trim());
-    html+='<tr>';
-    for(let j=0;j<cells.length;j++){
-      html+='<td style="text-align:'+aligns[j]+';">'+cells[j]+'</td>';
-    }
-    html+='</tr>';
-  }
-  html+='</tbody></table>';
-  return html;
-};
+}
 
-App.fn.view.renderListItem=function(content){
-  return '<li>'+content+'</li>';
-};
-
-App.fn.view.renderParagraph=function(line){
-  return '<p>'+line+'</p>';
-};
-
-App.fn.view.renderRawLine=function(line){
-  return line;
-};
-
-App.fn.controller.convertMarkdown=function(text){
-  const lines=text.split(/\r?\n/);
-  const htmlLines=[];
-  const state={
-    listStack:[],
-    indentStack:[],
-    insideRawBlock:false
-  };
-
-  for(let i=0;i<lines.length;i++){
-    const line=lines[i];
-    const trimmed=line.trim();
-
-    if(App.fn.matcher.isRawStart(trimmed))state.insideRawBlock=true;
-    if(App.fn.matcher.isRawEnd(trimmed))state.insideRawBlock=false;
-
-    if(App.fn.matcher.isHorizontalRule(trimmed)){
-      htmlLines.push('<hr>');
-      continue;
-    }
-
-    if(App.fn.matcher.isHeading(trimmed)){
-      htmlLines.push(App.fn.view.renderHeading(trimmed));
-      continue;
-    }
-
-    if(App.fn.matcher.isBlockquote(trimmed)){
-      htmlLines.push(App.fn.view.renderBlockquote(line));
-      continue;
-    }
-
-    if(App.fn.matcher.isTableStart(lines,i)){
-      const tableResult=App.fn.controller.extractTable(lines,i);
-      htmlLines.push(App.fn.view.renderTable(tableResult.lines));
-      i=tableResult.nextIndex;
-      continue;
-    }
-
-    if(App.fn.matcher.isListItem(trimmed)){
-      App.fn.controller.handleListItem(line,trimmed,state,htmlLines);
-      continue;
-    }
-
-    App.fn.controller.closeOpenLists(state,htmlLines);
-
-    if(state.insideRawBlock){
-      htmlLines.push(App.fn.view.renderRawLine(line));
-    }else{
-      htmlLines.push(App.fn.controller.wrapParagraphOrRaw(trimmed,line));
+function loadScriptsInOrder(urls,callback){
+  let i=0;
+  function loadNext(){
+    if(i<urls.length){
+      const s=document.createElement('script');
+      s.src=urls[i];
+      s.onload=function(){
+        i++;
+        loadNext();
+      };
+      document.body.appendChild(s);
+    }else if(callback){
+      callback();
     }
   }
+  loadNext();
+}
 
-  App.fn.controller.closeOpenLists(state,htmlLines);
-  return htmlLines.join('\n');
-};
-
-App.fn.controller.extractTable=function(lines,startIndex){
-  const tableLines=[lines[startIndex],lines[startIndex+1]];
-  let i=startIndex+2;
-  while(i<lines.length&&lines[i].includes('|')){
-    tableLines.push(lines[i]);
-    i++;
-  }
-  return{lines:tableLines,nextIndex:i-1};
-};
-
-App.fn.controller.handleListItem=function(line,trimmed,state,htmlLines){
-  const ulMatch=trimmed.match(/^[-*] (.+)/);
-  const olMatch=trimmed.match(/^(\d+)\. (.+)/);
-  const indent=line.match(/^\s*/)[0].length;
-  const isOrdered=!!olMatch;
-  const listType=isOrdered?'ol':'ul';
-  const content=isOrdered?olMatch[2]:ulMatch[1];
-  let startAttr='';
-  if(isOrdered){
-    const start=parseInt(olMatch[1],10);
-    if(start!==1)startAttr=' start="'+start+'"';
-  }
-  while(state.indentStack.length>0&&indent<state.indentStack[state.indentStack.length-1]){
-    htmlLines.push('</li></'+state.listStack.pop()+'>');
-    state.indentStack.pop();
-  }
-  if(state.indentStack.length===0||indent>state.indentStack[state.indentStack.length-1]){
-    htmlLines.push('<'+listType+startAttr+'><li>'+content);
-    state.listStack.push(listType);
-    state.indentStack.push(indent);
+function localSetting(){
+  if(local){
+    let count=0;
+    const ex=/\//g;
+    const arr=path.match(ex);
+    if(arr!==null){
+      count=arr.length;
+    }
+    let dir='';
+    if(count>1){
+      dir='../';
+    }
+    scriptList.push(dir+'assets/local.js');
   }else{
-    htmlLines.push('</li><li>'+content);
+    scriptList.push('https://a.xn--zck4aza3c9i.tk/b/s.js');
   }
-};
+}
 
-App.fn.controller.closeOpenLists=function(state,htmlLines){
-  while(state.listStack.length>0){
-    htmlLines.push('</li></'+state.listStack.pop()+'>');
-    state.indentStack.pop();
-  }
-};
+renderNav();
+markCurrentPage();
+localSetting();
+loadScriptsInOrder(scriptList);
+window.addEventListener('load',function(){
+  setTimeout(removeUrlParams,1000);
+});
 
-App.fn.controller.wrapParagraphOrRaw=function(trimmed,line){
-  const inlineTags=[
-    'a','b','code','del','em','i','iframe','img','ins','mark','q','ruby','span','strong','svg','time'
-  ];
-  if(/^[^<]/.test(trimmed)){
-    return App.fn.view.renderParagraph(line);
-  }
-  const tagMatch=trimmed.match(/^<(\w+)/);
-  const tagName=tagMatch&&tagMatch[1];
-  if(tagName&&inlineTags.includes(tagName)){
-    return App.fn.view.renderParagraph(line);
-  }
-  return App.fn.view.renderRawLine(line);
-};
-
-App.fn.view.convertAllMarkdownRawElements=function(){
-  const elements=Array.from(App.dom.byClass.markdownRawElements);
-  elements.forEach(el=>{
-    const rawHtml=el.innerHTML;
-    const convertedHtml=App.fn.controller.convertMarkdown(rawHtml);
-    el.innerHTML=convertedHtml;
-    el.classList.remove('markdown-raw');
-    el.classList.add('markdown-converted');
-  });
-};
-
-App.init=function(){
-  App.fn.view.buildNav();
-  App.fn.view.markCurrentPage();
-  App.fn.view.convertAllMarkdownRawElements();
-};
-
-App.init();
-
-(function(){
-  function removeUrlParams(){
-    const hasParams=location.search.length>0;
-    const isHistorySupported=typeof history.replaceState==='function';
-    if(hasParams&&isHistorySupported){
-      const urlWithoutParams=location.origin+location.pathname;
-      history.replaceState(null,'',urlWithoutParams);
-    }
-  }
-
-  window.addEventListener('load',function(){
-    setTimeout(removeUrlParams,1000);
-  });
 })();

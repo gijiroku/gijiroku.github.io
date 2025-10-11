@@ -3,44 +3,41 @@ body{
   font-size:1rem;
   line-height:2;
 }
-h2,
-h3:not(h2+h3){
-  margin-top:2rem;
-}
 a{
   text-underline-offset:.3ex;
 }
 a:link,a:visited{
   color:#22f;
 }
-a:hover{
+a:hover,
+summary:hover{
   color:#f22;
+  cursor:pointer;
 }
 img{
   max-width:100%;
 }
-.markdown-raw{
-  max-width:100%;
-  white-space:pre-wrap;
-}
 q{
-  background-color:#eee;
+  background:#eee;
 }
 q::before,
 q::after{
   content:'';
 }
-.has-quote-only{
-  margin-bottom:.2rem;
+blockquote{
+  margin:1rem 0;
+  padding:.5rem 1rem;
+  background:#eee;
+  border-radius:5px;
 }
-.has-quote-only:has(+:not(.has-quote-only)){
-  margin-bottom:1rem;
-}
-.has-quote-only+.has-quote-only{
-  margin-top:0;
+#siteName{
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
 }
 #nav{
   border-top:dashed 1px #222;
+  margin:3rem 0 0;
 }
 .current{
   font-weight:bold;
@@ -48,14 +45,57 @@ q::after{
 }
 .current::after{
   color:#a22;
-  content:'(\2190\4ECA\3053\3053)';
+  content:'(\2190\Now)';
   display:inline-block;
   margin-left:.3rem;
-}
-#nav{
-  margin:3rem 0 0;
 }
 noscript{
   color:red;
   font-weight:bold;
+}
+
+html[lang="ja"]{
+  h2,
+  h3:not(h2+h3){
+    margin-top:2rem;
+  }
+}
+
+html[lang="fil"]{
+  .pageDatetime{
+    display:none;
+  }
+  .subject,
+  .predicate,
+  .object{
+    text-decoration:solid underline 2px;
+    text-underline-offset:.4rem;
+  }
+  ol,
+  ul{
+    padding-left:30px;
+  }
+  ul{
+    list-style:none;
+    padding-left:1rem;
+  }
+  ul :first-child{
+    margin-top:2rem;
+  }
+  li{
+    margin-bottom:1rem;
+  }
+  .subject{
+    text-decoration-color:red;
+  }
+  .predicate{
+    text-decoration-color:blue;
+  }
+  .object{
+    text-decoration-color:#000;
+  }
+  /*.object{
+    text-decoration:#000 wavy underline;
+    text-underline-offset:.3rem;
+  }*/
 }
