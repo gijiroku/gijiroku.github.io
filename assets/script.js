@@ -92,6 +92,7 @@ function renderNav(){
     local=true;
   }
   path=url.split(domain)[1];
+  console.log(path);
   let subDir=path.split('/')[1];
   let navContent=reportNav;
   if(subDir=='fil'){
