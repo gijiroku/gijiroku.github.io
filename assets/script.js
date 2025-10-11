@@ -72,7 +72,7 @@ const filNav=`
 `;
 
 const scriptList=[];
-let domain=location.domain;
+let domain=location.hostname;
 let local=false;
 let path='';
 
