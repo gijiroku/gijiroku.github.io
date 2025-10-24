@@ -274,7 +274,7 @@ ul:not(.sentences){
   padding:0 .2rem;
   border-radius:.2rem;
 }
-.sentences li:hover{
+.sentences li>span:hover{
   background:#ffffe0;
   box-shadow:0 0 5px rgba(0,0,0,1);
 }
