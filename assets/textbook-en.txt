@@ -1,0 +1,33 @@
+<details lang="en">
+<summary id="summaryEnglish">English</summary>
+
+<h2>Materials used</h2>
+<p>On this website, you can study the materials provided on the following pages in your language:</p>
+<ul>
+<li><a href="https://www.pref.osaka.lg.jp/o180090/chikikyoiku/osyaberi/manesite.html" target="_blank" rel="nofollow noopener">Listen, imitate, and speak: 20 episodes of &quot;We Talk&quot; (Japanese page)</a></li>
+</ul>
+<p>I quote from the beginning of the material.</p>
+<blockquote>
+
+<p>This book is designed to help Japanese language learners (hereafter referred to as learners) acquire the Japanese language as a tool by &quot;listening, imitating (repeat), and speaking (talking about themselves)&quot; to the Japanese spoken by Japanese language supporters (hereafter referred to as supporters) and Japanese language teachers, using supplementary teaching material illustrations as well.</p>
+<p>In these activities, supporters are asked to use &quot;easy Japanese&quot; and &quot;listen&quot; closely to the learners in order to communicate with them in Japanese. We hope that you will support learners in learning &quot;Japanese that leads to the power to live,&quot; so that they can take their first step toward connecting with society with confidence and live better lives.</p>
+<p>We hope that everyone who uses this text will have a lively and enjoyable experience communicating in Japanese.</blockquote></p>
+<h2>About this website</h2>
+<ul>
+<li>The author is Japanese.</li>
+<li>Please let me know if there are any mistakes in languages other than Japanese.</li>
+</ul>
+<h2>About parts of speech</h2>
+<h3>Parts of speech may vary depending on the language.</h3>
+<ul>
+<li>Not all languages ​​have a subject, predicate, and object.</li>
+<li>Subjects are often omitted in Japanese.</li>
+<li>Japanese sentences written in the alphabet prioritize pronunciation.</li>
+</ul>
+<h3>Color-coded parts of speech</h3>
+<ul>
+<li>Subjects are underlined in red, predicates in blue, and objects in black.</li>
+<li>This color scheme is easy to use with a three-color ballpoint pen when writing explanations in a notebook.</li>
+<li>We prioritize clarity over the actual parts of speech in Japanese.</li>
+</ul>
+</details>

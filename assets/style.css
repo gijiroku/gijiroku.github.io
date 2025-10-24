@@ -1,7 +1,20 @@
+/***************
+タグに定義
+***************/
+
 body{
   color:#222;
   font-size:1rem;
   line-height:2;
+}
+h1{
+  font-size:1.5rem;
+}
+h2{
+  font-size:1.3rem;
+}
+h3{
+  font-size:1.1rem;
 }
 a{
   text-underline-offset:.3ex;
@@ -14,7 +27,45 @@ summary:hover{
   color:#f22;
   cursor:pointer;
 }
+details{
+  border:1px solid #ddd;
+  border-radius:.5rem;
+  min-width:300px;
+  margin:1rem 0;
+  padding:.5rem;
+  box-sizing:border-box;
+  &::details-content{
+    padding:0 .5rem;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  details::details-content{
+    height:0;
+    overflow:clip;
+    transition:height 0.4s ease,opacity 0.4s ease,content-visibility 0.2s ease allow-discrete;
+  }
+  details:not([open])::details-content{
+    opacity:0;
+  }
+  @supports(interpolate-size:allow-keywords){
+    :root{
+      interpolate-size:allow-keywords;
+    }
+    details[open]::details-content{
+      height:auto;
+    }
+  }
+}
+@supports not (interpolate-size:allow-keywords){
+  details{
+    &::details-content{
+      height:auto;
+    }
+  }
+}
 summary{
+  font-weight:bold;
+  cursor:pointer;
   color:#007ea8;
 }
 img{
@@ -29,74 +80,210 @@ q::after{
 }
 blockquote{
   margin:1rem 0;
-  padding:.5rem 1rem;
+  padding:.5rem 1rem .5rem 2rem;
   background:#eee;
   border-radius:5px;
-}
-#siteName{
-  margin: 0;
-  font-weight: normal;
-  font-size: 1rem;
-}
-#nav{
-  border-top:dashed 1px #222;
-  margin:3rem 0 0;
-}
-.current{
-  font-weight:bold;
   position:relative;
 }
-.current::after{
-  color:#a22;
-  content:'(\2190\Now)';
+blockquote::before{
   display:inline-block;
-  margin-left:.3rem;
+  position:absolute;
+  top:.5rem;
+  left:.5rem;
+  vertical-align:middle;
+  content:"“";
+  font-size:3rem;
+  font-family:Times New Roman,游明朝体,YuMincho,游明朝,Yu Mincho,serif;
+  color:#6f8383;
+  line-height:1;
 }
 noscript{
   color:red;
   font-weight:bold;
 }
+#footer{
+  text-align:center;
+}
 
+/***************
+idとclassに定義
+***************/
+
+#siteName{
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
 html[lang="ja"]{
   h2,
   h3:not(h2+h3){
     margin-top:2rem;
   }
 }
+.pageDatetime:not(html[lang="ja"] .pageDatetime){
+  d-isplay:none;
+}
+.created::before{margin-right:0.3rem;}
+.updated::before{margin-right:0.3rem;}
+.updated+.created{color:#555;font-size:70%;}
+html[lang="ja"] .created::before{content:"作成:";}
+html[lang="ja"] .updated::before{content:"更新:";}
+html[lang="en"] .created::before{content:"Created:";}
+html[lang="en"] .updated::before{content:"Updated:";}
+html[lang="fil"] .created::before{content:"Ginawa:";}
+html[lang="fil"] .updated::before{content:"Inupdate:";}
+html[lang="id"] .created::before{content:"Dibuat:";}
+html[lang="id"] .updated::before{content:"Diperbarui:";}
+html[lang="zh"] .created::before{content:"创建日期:";}
+html[lang="zh"] .updated::before{content:"更新日期:";}
+html[lang="vi"] .created::before{content:"Được tạo:";}
+html[lang="vi"] .updated::before{content:"Cập nhật:";}
+html[lang="ko"] .created::before{content:"작성일:";}
+html[lang="ko"] .updated::before{content:"수정일:";}
+html[lang="th"] .created::before{content:"สร้างเมื่อ:";}
+html[lang="th"] .updated::before{content:"อัปเดตเมื่อ:";}
 
-html[lang="fil"]{
-  .pageDatetime{
-    display:none;
+/***************
+メインコンテンツの表示/非表示を切り替える機能
+***************/
+
+#settings{
+  --formWidth:300px;
+  width:calc(var(--formWidth) + 3rem);
+  margin:0 auto;
+  #form{
+    margin-top:.5rem;
+    max-width:var(--formWidth);
   }
+}
+.toggleSwitch{
+  --toggleHeight:1.5rem;/*--toggleHeight を基準として定義します (例:48px)*/
+  --buttonOffset:calc(var(--toggleHeight)/16);/*3px→基準の高さの1/16 (48px/16=3px)*/
+  --buttonSize:calc(var(--toggleHeight) - (var(--buttonOffset)*2));
+  --buttonMarginLeft:calc(100% - var(--toggleHeight));
+  --toggleOnColor:#1976d2;/*緑色#16d088*/
+  --toggleOnBackground:#1976d2;/*緑色#24e89c*/
+  --toggleOffColor:#999;/*灰色*//*#df4c43赤色*/
+  --toggleOffBackground:#bbb;/*薄い灰色*//*#f45e55赤色*/
+  position:relative;
+  width:100%;
+  height:var(--toggleHeight);
+  padding:0;
+  margin-bottom:.5rem;
+  border:0;
+  color:var(--toggleOffBackground);
+  box-sizing:border-box;
+}
+.toggleSwitch:has(input[value="1"]){
+  color:inherit;
+}
+.toggleSwitch input[type="checkbox"]{
+  display:none;
+}
+.toggleSwitch label{
+  width:100%;
+  display:block;
+  line-height:1.4;
+}
+.toggleSwitch label,
+.toggleSwitch label:before,
+.toggleSwitch label:after{
+  cursor:pointer;
+}
+.toggleSwitch label::before{
+  margin-left:var(--buttonMarginLeft);
+}
+.toggleSwitch label::before,
+.toggleSwitch label::after{
+  text-align:center;
+  border-radius:calc(var(--toggleHeight)/2);/*高さが変わっても常に半円になるよう、border-radiusは高さの半分にする*/
+  display:block;
+  position:absolute;
+  transition:0.2s ease-out;
+  content:"";
+  font-weight:bold;
+  top:0;
+  left:0;
+  height:100%;
+  width:calc(var(--toggleHeight)*1.625);/*幅は高さの約1.6倍に設定（78px/48px≈1.625）*/
+  font-size:calc(var(--buttonSize)*.45);
+  letter-spacing:calc(var(--toggleHeight)/96);
+  box-sizing:border-box;
+  color:var(--toggleOffColor);
+  background:var(--toggleOffBackground);
+  line-height:.9;
+}
+.toggleSwitch label:after,
+.toggleSwitch input[type="checkbox"]:checked+label:after{
+  box-shadow:0 calc(var(--toggleHeight)*.1875) calc(var(--toggleHeight)*.583) calc(var(--toggleHeight)*-.125) rgba(0,0,0,0.3);
+}
+.toggleSwitch label:after{
+  content:"OFF";
+  top:var(--buttonOffset);
+  left:calc(var(--buttonMarginLeft) + var(--buttonOffset));
+  width:var(--buttonSize);
+  height:var(--buttonSize);
+  background:#fff;
+  padding:calc(var(--buttonSize)/3) 0 0;/*14px→ボタンサイズの約1/3 (42px/3=14px)*/
+}
+.toggleSwitch input[type="checkbox"]:checked+label:before{/*チェック状態（:checked）に基づくスタイルの変更*/
+  background:var(--toggleOnBackground);
+}
+.toggleSwitch input[type="checkbox"]:checked+label:after{/*丸ボタンの移動とテキストの変更*/
+  content:"ON";
+  /*33px→全幅から丸ボタンの幅とマージンを引いた値 (78px - 42px - 3px=33px)*/
+  /*全幅:calc(var(--toggleHeight)*1.625)*/
+  /*計算:(基準の幅) - (ボタンサイズ) - (マージン)*/
+  left:calc(var(--buttonMarginLeft) + calc(var(--toggleHeight)*1.625) - var(--buttonSize) - var(--buttonOffset));
+  color:var(--toggleOnColor);
+  padding:calc(var(--buttonSize)/3) 0 0 calc(var(--toggleHeight)/48);
+}
+.isTransparent{
+  color:transparent;
+  background:#eee;
+  border-radius:.5rem;
+}
+.sentences li{
+  cursor:pointer;
+}
+
+/***************
+メインコンテンツ（.sentences関連）
+***************/
+
+main:has(.sentences){
+  counter-reset:number 0;
+}
+ul:not(.sentences){
+  padding-left:20px;
+}
+.sentences{
+  border-left:5px solid #a1e3f9;
+  list-style:none;
+  margin-bottom:2rem;
+  padding:0 .5rem;
+}
+.sentences::before{
+  color:#555;
+  font-size:2rem;
+  content:'#' counter(number);
+  counter-increment:number;
+}
+.sentences li{
+  margin-bottom:1rem;
+  padding:0 .2rem;
+  border-radius:.2rem;
+}
+.sentences li:hover{
+  background:#ffffe0;
+  box-shadow:0 0 5px rgba(0,0,0,1);
+}
+li:not(.isTransparent){
   .subject,
   .predicate,
   .object{
     text-decoration:solid underline 2px;
     text-underline-offset:.4rem;
-  }
-  ol{
-    padding:0;
-    list-style-type:none;
-    counter-reset:number 0;
-  }
-  ul{
-    list-style:none;
-    margin-bottom:2rem;
-    padding:0 .5rem;
-    list-style-type:none;
-  }
-  :not(.pageIndex) main{
-    ul{
-      border-left:5px solid #a1e3f9;
-    }
-    ul::before{
-      font-size:2rem;
-      content:counter(number);
-      counter-increment:number;
-    }
-  }
-  li{
-    margin-bottom:1rem;
   }
   .subject{
     text-decoration-color:red;
@@ -111,4 +298,22 @@ html[lang="fil"]{
     text-decoration:#000 wavy underline;
     text-underline-offset:.3rem;
   }*/
+}
+/***************
+#nav関連
+***************/
+
+#nav{
+  border-top:dashed 1px #222;
+  margin:3rem 0 0;
+}
+.current{
+  font-weight:bold;
+  position:relative;
+}
+.current::after{
+  color:#a22;
+  content:'(\2190\Now)';
+  display:inline-block;
+  margin-left:.3rem;
 }

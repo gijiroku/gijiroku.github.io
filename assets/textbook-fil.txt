@@ -1,0 +1,34 @@
+<details>
+<summary id="summaryFilipino">Filipino</summary>
+
+<h2>Mga materyales na ginamit</h2>
+<p>Sa website na ito, maaari mong pag-aralan ang mga materyales na ipinamahagi sa mga sumusunod na pahina sa Filipino.</p>
+<ul>
+<li><a href="https://www.pref.osaka.lg.jp/o180090/chikikyoiku/osyaberi/manesite.html" target="_blank" rel="nofollow noopener">Makinig, gayahin, at magsalita: 20 episodes ng &quot;Nag-uusap kami&quot; (website ng Hapon)</a></li>
+</ul>
+<blockquote>
+
+<p>Ang aklat na ito ay isang teksto para sa mga nag-aaral ng Hapon (mula rito ay tinutukoy bilang mga nag-aaral) upang makakuha ng kasangkapang Hapones habang nagtatrabaho kasama ng Hapon, na sinasalita ng mga nag-aaral ng Hapones (mula rito ay tinutukoy bilang mga tagasuporta) at mga guro ng Hapon, kasama ang mga ilustrasyon ng mga karagdagang materyales sa pagtuturo.</p>
+<p>Sa mga aktibidad, ang mga tagasuporta ay dapat gumamit ng &quot;madaling Hapones&quot; at &quot;pakikinig&quot; sa mga mag-aaral upang makipag-usap sa kanila sa wikang Hapon. Umaasa kaming suportahan ang &quot;Japanese na humahantong sa kapangyarihan upang mabuhay&quot; upang ang mga mag-aaral ay maaaring gumawa ng unang hakbang patungo sa lipunan nang may kumpiyansa at gumugol ng mas magandang oras.</p>
+<p>At umaasa ako na lahat ng gumagamit ng tekstong ito ay magkakaroon ng masigla at kasiya-siyang karanasan sa pakikipag-usap sa wikang Hapon.</p>
+</blockquote>
+
+<h2>Tungkol sa website na ito</h2>
+<ul>
+<li>Japanese ang author.</li>
+<li>Mangyaring ipaalam sa akin kung mayroong anumang mga pagkakamali sa Ingles o Filipino.</li>
+</ul>
+<h2>Tungkol sa mga bahagi ng pananalita</h2>
+<h3>Ang mga bahagi ng pananalita ay maaaring mag-iba depende sa wika.</h3>
+<ul>
+<li>Hindi lahat ng wika ay may paksa, panaguri, at layon.</li>
+<li>Ang mga paksa ay madalas na tinanggal sa wikang Hapon.</li>
+<li>Ang mga Japanese na pangungusap na nakasulat sa alpabeto ay inuuna ang pagbigkas.</li>
+</ul>
+<h3>Mga bahagi ng pananalita na may kulay na code</h3>
+<ul>
+<li>Ang mga paksa ay may salungguhit sa pula, mga panaguri sa asul, at mga bagay sa itim.</li>
+<li>Ang scheme ng kulay na ito ay madaling gamitin sa isang tatlong-kulay na ballpen kapag nagsusulat ng mga paliwanag sa isang notebook.</li>
+<li>Priyoridad namin ang kalinawan kaysa sa aktwal na mga bahagi ng pananalita sa Japanese.</li>
+</ul>
+</details>
