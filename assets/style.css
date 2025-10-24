@@ -306,6 +306,9 @@ li:not(.isTransparent){
 #nav{
   border-top:dashed 1px #222;
   margin:3rem 0 0;
+  li{
+    margin-bottom:1rem;
+  }
 }
 .current{
   font-weight:bold;
