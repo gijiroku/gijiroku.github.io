@@ -59,147 +59,147 @@ navContent.ja=`
 
 navContent.titles=[
   {
-    'page':20,
+    'slug':20,
     'ja':'わたしの いちにち',
     'en':'My Day',
     'fil':'Aking Araw',
     '':'',
   },
   {
-    'page':22,
+    'slug':22,
     'ja':'かいもの',
     'en':'Shopping',
     'fil':'Pamimili',
     '':'',
   },
   {
-    'page':24,
+    'slug':24,
     'ja':'すてきな あさごはん',
     'en':'Good Breakfast',
     'fil':'Magandang Almusal',
     '':'',
   },
   {
-    'page':26,
+    'slug':26,
     'ja':'わたしの たいせつな ばしょ',
     'en':'My important place',
     'fil':'Ang mahalagang lugar ko',
     '':'',
   },
   {
-    'page':28,
+    'slug':28,
     'ja':'にほんの アニメ',
     'en':'Japanese anime',
     'fil':'Hapon na anime',
     '':'',
   },
   {
-    'page':30,
+    'slug':30,
     'ja':'わたしの まち',
     'en':'My Town',
     'fil':'Aking Bayan',
     '':'',
   },
   {
-    'page':32,
+    'slug':32,
     'ja':'ゆうえんち',
     'en':'Amusement Park',
     'fil':'Amusement Park',
     '':'',
   },
   {
-    'page':34,
+    'slug':34,
     'ja':'スマホケース と かさ',
     'en':'Smartphone case and umbrella',
     'fil':'Case ng phone at payong',
     '':'',
   },
   {
-    'page':36,
+    'slug':36,
     'ja':'ショッピングモール',
     'en':'Shopping mall',
     'fil':'Shopping mall',
     '':'',
   },
   {
-    'page':38,
+    'slug':38,
     'ja':'わたしの まち ダナン',
     'en':'My town, Da Nang',
     'fil':'Ang aking bayan, Da Nang',
     '':'',
   },
   {
-    'page':40,
+    'slug':40,
     'ja':'ダンスの れんしゅう',
     'en':'Dance practice',
     'fil':'Practice ng sayaw',
     '':'',
   },
   {
-    'page':42,
+    'slug':42,
     'ja':'ならへ いきたいです',
     'en':'I want to go to Nara',
     'fil':'Gusto kong pumunta sa Nara',
     '':'',
   },
   {
-    'page':44,
+    'slug':44,
     'ja':'たのしい にほんご きょうしつ',
     'en':'Fun Japanese Class',
     'fil':'Nakakatuwang Japanese Class',
     '':'',
   },
   {
-    'page':46,
+    'slug':46,
     'ja':'コンビニのアルバイト',
     'en':'Part-time job at a convenience store',
     'fil':'Part-time na trabaho sa isang convenience store',
     '':'',
   },
   {
-    'page':48,
+    'slug':48,
     'ja':'じぶんの かいしゃを つくりたいです',
     'en':'I want to start my own company',
     'fil':'Gusto kong magtayo ng sarili kong kumpanya',
     '':'',
   },
+  {
+    'slug':50,
+    'ja':'わたしは びようしでした',
+    'en':'I was a hairdresser',
+    'fil':'Dati akong hairdresser',
+    '':'',
+  },
 //   {
-//     'page':50,
-//     'ja':'わたしは びようしでした',
-//     'en':'I was a hairdresser',
-//     'fil':'Dati akong hairdresser',
-//     '':'',
-//   },
-//   {
-//     'page':52,
+//     'slug':52,
 //     'ja':'なつの べんりな もの',
 //     'en':'Useful things for summer',
 //     'fil':'Mga kapaki-pakinabang na bagay para sa tag-araw',
 //     '':'',
 //   },
 //   {
-//     'page':54,
+//     'slug':54,
 //     'ja':'おおさかべんの べんきょう',
 //     'en':'Studying Osaka dialect',
 //     'fil':'Nag-aaral ng Osaka dialect',
 //     '':'',
 //   },
 //   {
-//     'page':56,
+//     'slug':56,
 //     'ja':'たこやき だいすき',
 //     'en':'I love takoyaki',
 //     'fil':'Gusto ko ng takoyaki',
 //     '':'',
 //   },
 //   {
-//     'page':58,
+//     'slug':58,
 //     'ja':'かふんしょう',
 //     'en':'Hay fever',
 //     'fil':'Hay fever',
 //     '':'',
 //   },
 //   {
-//     'page':6,
+//     'slug':6,
 //     'ja':'',
 //     'en':'',
 //     'fil':'',
@@ -266,6 +266,11 @@ function generateDir(){
     dir='../';
   }
   return dir;
+}
+
+function renderLoading(){
+  const loading=`<p id="loading"><!-- By Sam Herbert (@sherb), for everyone. More @ https://github.com/SamHerbert/SVG-Loaders --><svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#000"><g transform="translate(1 1)" stroke-width="2" fill="none"><circle stroke-opacity=".3" cx="18" cy="18" r="18"/><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur=".5s" repeatCount="indefinite"/></path></g></svg></p>`;
+  article.insertAdjacentHTML('beforeend',loading);
 }
 
 function getFileName(){
@@ -482,7 +487,7 @@ function buildNav(){
 <ul>
 `;
   for(let i=0;i<titles.length;i++){
-    const page=titles[i].page;
+    const slug=titles[i].slug;
     let mainLang=titles[i][lang]+' ';
     if(lang=='en'){
       mainLang='';
@@ -492,7 +497,7 @@ function buildNav(){
     if(en==mainLang){
       en='';
     }
-    html+=`<li><a href="/${lang}/${page}">${page}: ${mainLang}${ja}${en}</a></li>\n`;
+    html+=`<li><a href="/${lang}/${slug}">${slug}: ${mainLang}${ja}${en}</a></li>\n`;
   }
   html+=`</ul>
 <p><a href="/${lang}/">Back to home</a></p>
@@ -572,6 +577,7 @@ async function loadScriptsInOrder(urls,callback){
 //**************
 
 async function init(){
+  renderLoading();
   if(document.body.classList.contains('pageIndex')){
     await renderIndex();
   }else if(lang!='ja'){
@@ -582,6 +588,7 @@ async function init(){
   selectScript();
   await loadScriptsInOrder(scriptList);
   renderNav();
+  document.getElementById('loading').remove();
   window.addEventListener('load',function(){
     setTimeout(removeUrlParams,1000);
   });
