@@ -1831,94 +1831,94 @@
   "50":[
     {
       "alphabet": "<span class='subject'>Watashi wa</span> Tai de <span class='predicate'>biyooshi deshita</span>.",
-      "hira": "<span class='subject'>わたしは</span> タイで <span class='predicate'>びようしでした</span>。",
+      "hira": "<span class='subject'>わたしは</span> たいで <span class='predicate'>びようしでした</span>。",
       "kata": "<span class='subject'>わたしは</span> タイで <span class='predicate'>びようしでした</span>。",
       "rubi": "<span class='subject'>わたしは</span>タイで<span class='predicate'><ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>でした</span>。",
       "kanji": "<span class='subject'>わたしは</span>タイで<span class='predicate'>美容師でした</span>。"
     },
     {
-      "alphabet": "Juunana-sai no toki, <span class='object'>biyooshi no gakkoo ni</span> <span class='predicate'>hairimashita</span>.",
-      "hira": "17さいのとき、<span class='object'>びようしの がっこうに</span> <span class='predicate'>はいりました</span>。",
-      "kata": "17さいのとき、<span class='object'>びようしの がっこうに</span> <span class='predicate'>はいりました</span>。",
-      "rubi": "17<ruby><rb>歳</rb><rp>(</rp><rt>さい</rt><rp>)</rp></ruby>のとき、<span class='object'><ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>の<ruby><rb>学校</rb><rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に</span><span class='predicate'><ruby><rb>入</rb><rp>(</rp><rt>はい</rt><rp>)</rp></ruby>りました</span>。",
-      "kanji": "17歳のとき、<span class='object'>美容師の学校に</span><span class='predicate'>入りました</span>。"
+      "alphabet": "<span class='predicate'>Juunana-sai</span> no toki, biyooshi no gakkoo ni <span class='predicate'>hairimashita</span>.",
+      "hira": "<span class='predicate'>17さい</span>のとき、びようしの がっこうに <span class='predicate'>はいりました</span>。",
+      "kata": "<span class='predicate'>17さい</span>のとき、びようしの がっこうに <span class='predicate'>はいりました</span>。",
+      "rubi": "<span class='predicate'>17<ruby><rb>歳</rb><rp>(</rp><rt>さい</rt><rp>)</rp></ruby></span>のとき、<ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>の<ruby><rb>学校</rb><rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<span class='predicate'><ruby><rb>入</rb><rp>(</rp><rt>はい</rt><rp>)</rp></ruby>りました</span>。",
+      "kanji": "<span class='predicate'>17歳</span>のとき、美容師の学校に<span class='predicate'>入りました</span>。"
     },
     {
-      "alphabet": "<span class='predicate'>Hataraitte imashita</span>.",
-      "hira": "がっこうを そつぎょうして、おおきい びよういんで <span class='predicate'>はたらいていました</span>。",
-      "kata": "がっこうを そつぎょうして、おおきい びよういんで <span class='predicate'>はたらいていました</span>。",
-      "rubi": "<ruby><rb>学校</rb><rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>を<ruby><rb>卒業</rb><rp>(</rp><rt>そつぎょう</rt><rp>)</rp></ruby>して、<ruby><rb>大</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>きい<ruby><rb>美容院</rb><rp>(</rp><rt>びよういん</rt><rp>)</rp></ruby>で<span class='predicate'><ruby><rb>働</rb><rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>いていました</span>。",
-      "kanji": "学校を卒業して、大きい美容院で<span class='predicate'>働いていました</span>。"
+      "alphabet": "<span class='object'>Gakkoo o</span> <span class='predicate'>sotsugyoo shite</span>, ookii biyooin de<span class='predicate'>hataraitte imashita</span>.",
+      "hira": "<span class='object'>がっこうを</span> <span class='predicate'>そつぎょうして</span>、おおきい びよういんで <span class='predicate'>はたらいていました</span>。",
+      "kata": "<span class='object'>がっこうを</span> <span class='predicate'>そつぎょうして</span>、おおきい びよういんで <span class='predicate'>はたらいていました</span>。",
+      "rubi": "<span class='predicate'><ruby><rb>学校</rb><rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>を</span><span class='predicate'><ruby><rb>卒業</rb><rp>(</rp><rt>そつぎょう</rt><rp>)</rp></ruby>して</span>、<ruby><rb>大</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>きい<ruby><rb>美容院</rb><rp>(</rp><rt>びよういん</rt><rp>)</rp></ruby>で<span class='predicate'><ruby><rb>働</rb><rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>いていました</span>。",
+      "kanji": "<span class='object'>学校を</span><span class='predicate'>卒業して</span>、大きい美容院で<span class='predicate'>働いていました</span>。"
     },
     {
-      "alphabet": "<span class='predicate'>Shanpuu shitari</span>, <span class='predicate'>katto shitari shimashita</span>.",
-      "hira": "おきゃくさんが おおいとき、1にちに 20にんぐらい <span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。",
-      "kata": "おきゃくさんが おおいとき、1にちに 20にんぐらい <span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。",
-      "rubi": "お<ruby><rb>客</rb><rp>(</rp><rt>きゃく</rt><rp>)</rp></ruby>さんが<ruby><rb>多</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>いとき、1<ruby><rb>日</rb><rp>(</rp><rt>にち</rt><rp>)</rp></ruby>に20<ruby><rb>人</rb><rp>(</rp><rt>にん</rt><rp>)</rp></ruby>ぐらい<span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。",
-      "kanji": "お客さんが多いとき、1日に20人ぐらい<span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。"
+      "alphabet": "<span class='subject'>Okyakusan ga</span> <span class='predicate'>ooi</span> toki, ichinichi ni nijuu nin gurai <span class='predicate'>shanpuu shitari</span>, <span class='predicate'>katto shitari shimashita</span>.",
+      "hira": "<span class='subject'>おきゃくさんが</span> <span class='predicate'>おおい</span>とき、1にちに 20にんぐらい <span class='predicate'>しゃんぷーしたり</span>、<span class='predicate'>かっとしたりしました</span>。",
+      "kata": "<span class='subject'>おきゃくさんが</span> <span class='predicate'>おおい</span>とき、1にちに 20にんぐらい <span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。",
+      "rubi": "<span class='subject'>お<ruby><rb>客</rb><rp>(</rp><rt>きゃく</rt><rp>)</rp></ruby>さんが</span><span class='predicate'><ruby><rb>多</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>い</span>とき、1<ruby><rb>日</rb><rp>(</rp><rt>にち</rt><rp>)</rp></ruby>に20<ruby><rb>人</rb><rp>(</rp><rt>にん</rt><rp>)</rp></ruby>ぐらい<span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。",
+      "kanji": "<span class='subject'>お客さんが</span><span class='predicate'>多い</span>とき、1日に20人ぐらい<span class='predicate'>シャンプーしたり</span>、<span class='predicate'>カットしたりしました</span>。"
     },
     {
-      "alphabet": "<span class='subject'>On'na no hito ga</span> takusan <span class='predicate'>kimashita</span>.",
-      "hira": "バンコクの おおきい おまつりのとき、わかい <span class='subject'>おんなのひとが</span> たくさん <span class='predicate'>きました</span>。",
+      "alphabet": "Bankoku no ookii omatsuri no toki, wakai <span class='subject'>on'na no hito ga</span> takusan <span class='predicate'>kimashita</span>.",
+      "hira": "ばんこくの おおきい おまつりのとき、わかい <span class='subject'>おんなのひとが</span> たくさん <span class='predicate'>きました</span>。",
       "kata": "バンコクの おおきい おまつりのとき、わかい <span class='subject'>おんなのひとが</span> たくさん <span class='predicate'>きました</span>。",
       "rubi": "バンコクの<ruby><rb>大</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>きいお<ruby><rb>祭</rb><rp>(</rp><rt>まつ</rt><rp>)</rp></ruby>りのとき、<ruby><rb>若</rb><rp>(</rp><rt>わか</rt><rp>)</rp></ruby>い<span class='subject'><ruby><rb>女</rb><rp>(</rp><rt>おんな</rt><rp>)</rp></ruby>の<ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が</span>たくさん<span class='predicate'><ruby><rb>来</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ました</span>。",
       "kanji": "バンコクの大きいお祭りのとき、若い<span class='subject'>女の人が</span>たくさん<span class='predicate'>来ました</span>。"
     },
     {
-      "alphabet": "<span class='subject'>Jikan mo</span> <span class='predicate'>arimasen deshita</span>.",
-      "hira": "ほんとうに いそがしいとき、ひるごはんの <span class='subject'>じかんも</span> <span class='predicate'>ありませんでした</span>。",
-      "kata": "ほんとうに いそがしいとき、ひるごはんの <span class='subject'>じかんも</span> <span class='predicate'>ありませんでした</span>。",
-      "rubi": "ほんとうに<ruby><rb>忙</rb><rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しいとき、<ruby><rb>昼</rb><rp>(</rp><rt>ひる</rt><rp>)</rp></ruby>ごはんの<span class='subject'><ruby><rb>時間</rb><rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>も</span><span class='predicate'>ありませんでした</span>。",
-      "kanji": "ほんとうに忙しいとき、昼ごはんの<span class='subject'>時間も</span><span class='predicate'>ありませんでした</span>。"
+      "alphabet": "Hontoo ni <span class='predicate'>isogashii</span> toki, hirugohan no <span class='subject'>jikan mo</span> <span class='predicate'>arimasen deshita</span>.",
+      "hira": "ほんとうに <span class='predicate'>いそがしい</span>とき、ひるごはんの <span class='subject'>じかんも</span> <span class='predicate'>ありませんでした</span>。",
+      "kata": "ほんとうに <span class='predicate'>いそがしい</span>とき、ひるごはんの <span class='subject'>じかんも</span> <span class='predicate'>ありませんでした</span>。",
+      "rubi": "ほんとうに<span class='predicate'><ruby><rb>忙</rb><rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しい</span>とき、<ruby><rb>昼</rb><rp>(</rp><rt>ひる</rt><rp>)</rp></ruby>ごはんの<span class='subject'><ruby><rb>時間</rb><rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>も</span><span class='predicate'>ありませんでした</span>。",
+      "kanji": "ほんとうに<span class='predicate'>忙しい</span>とき、昼ごはんの<span class='subject'>時間も</span><span class='predicate'>ありませんでした</span>。"
     },
     {
-      "alphabet": "Demo, <span class='subject'>watashi wa</span> <span class='object'>biyooshi no shigoto ga</span> <span class='predicate'>suki deshita</span>.",
-      "hira": "でも、<span class='subject'>わたしは</span> <span class='object'>びようしの しごとが</span> <span class='predicate'>すきでした</span>。",
-      "kata": "でも、<span class='subject'>わたしは</span> <span class='object'>びようしの しごとが</span> <span class='predicate'>すきでした</span>。",
-      "rubi": "でも、<span class='subject'>わたしは</span><span class='object'><ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>の<ruby><rb>仕事</rb><rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>が</span><span class='predicate'><ruby><rb>好</rb><rp>(</rp><rt>す</rt><rp>)</rp></ruby>きでした</span>。",
-      "kanji": "でも、<span class='subject'>わたしは</span><span class='object'>美容師の仕事が</span><span class='predicate'>好きでした</span>。"
+      "alphabet": "Demo, <span class='subject'>watashi wa</span> biyooshi no <span class='object'>shigoto ga</span> <span class='predicate'>suki deshita</span>.",
+      "hira": "でも、<span class='subject'>わたしは</span> びようしの <span class='object'>しごとが</span> <span class='predicate'>すきでした</span>。",
+      "kata": "でも、<span class='subject'>わたしは</span> びようしの <span class='object'>しごとが</span> <span class='predicate'>すきでした</span>。",
+      "rubi": "でも、<span class='subject'>わたしは</span><ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>の<span class='object'><ruby><rb>仕事</rb><rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>が</span><span class='predicate'><ruby><rb>好</rb><rp>(</rp><rt>す</rt><rp>)</rp></ruby>きでした</span>。",
+      "kanji": "でも、<span class='subject'>わたしは</span>美容師の<span class='object'>仕事が</span><span class='predicate'>好きでした</span>。"
     },
     {
-      "alphabet": "Soshite, nijuugo-sai no toki, <span class='predicate'>kekkon shite</span> Nihon e <span class='predicate'>kimashita</span>.",
-      "hira": "そして、25さいのとき、<span class='predicate'>けっこんして</span> にほんへ <span class='predicate'>きました</span>。",
-      "kata": "そして、25さいのとき、<span class='predicate'>けっこんして</span> にほんへ <span class='predicate'>きました</span>。",
-      "rubi": "そして、25<ruby><rb>歳</rb><rp>(</rp><rt>さい</rt><rp>)</rp></ruby>のとき、<span class='predicate'><ruby><rb>結婚</rb><rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>して</span><ruby><rb>日本</rb><rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>へ<span class='predicate'><ruby><rb>来</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ました</span>。",
-      "kanji": "そして、25歳のとき、<span class='predicate'>結婚して</span>日本へ<span class='predicate'>来ました</span>。"
+      "alphabet": "Soshite, <span class='predicate'>nijuugo-sai</span> no toki, <span class='predicate'>kekkon shite</span> Nihon e <span class='predicate'>kimashita</span>.",
+      "hira": "そして、<span class='predicate'>25さい</span>のとき、<span class='predicate'>けっこんして</span> にほんへ <span class='predicate'>きました</span>。",
+      "kata": "そして、<span class='predicate'>25さい</span>のとき、<span class='predicate'>けっこんして</span> にほんへ <span class='predicate'>きました</span>。",
+      "rubi": "そして、<span class='predicate'>25<ruby><rb>歳</rb><rp>(</rp><rt>さい</rt><rp>)</rp></ruby></span>のとき、<span class='predicate'><ruby><rb>結婚</rb><rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>して</span><ruby><rb>日本</rb><rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>へ<span class='predicate'><ruby><rb>来</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ました</span>。",
+      "kanji": "そして、<span class='predicate'>25歳</span>のとき、<span class='predicate'>結婚して</span>日本へ<span class='predicate'>来ました</span>。"
     },
     {
-      "alphabet": "<span class='subject'>Watashi wa</span> ima, <span class='predicate'>shufu desu</span>. <span class='predicate'>Isogashikatta desu</span> ga, ima, sukoshi <span class='subject'>jikan ga</span> <span class='predicate'>arimasu</span>.",
-      "hira": "<span class='subject'>わたしは</span> いま、<span class='predicate'>しゅふです</span>。 こどもが ちいさいとき、<span class='predicate'>いそがしかったですが</span>、いま、すこし <span class='subject'>じかんが</span> <span class='predicate'>あります</span>。",
-      "kata": "<span class='subject'>わたしは</span> いま、<span class='predicate'>しゅふです</span>。 こどもが ちいさいとき、<span class='predicate'>いそがしかったですが</span>、いま、すこし <span class='subject'>じかんが</span> <span class='predicate'>あります</span>。",
-      "rubi": "<span class='subject'>わたしは</span><ruby><rb>今</rb><rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<span class='predicate'><ruby><rb>主婦</rb><rp>(</rp><rt>しゅふ</rt><rp>)</rp></ruby>です</span>。<ruby><rb>子</rb><rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもが<ruby><rb>小</rb><rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さいとき、<span class='predicate'><ruby><rb>忙</rb><rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったですが</span>、<ruby><rb>今</rb><rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、すこし<span class='subject'><ruby><rb>時間</rb><rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>が</span><span class='predicate'>あります</span>。",
-      "kanji": "<span class='subject'>わたしは</span>今、<span class='predicate'>主婦です</span>。子どもが小さいとき、<span class='predicate'>忙しかったですが</span>、今、少し<span class='subject'>時間が</span><span class='predicate'>あります</span>。"
+      "alphabet": "<span class='subject'>Watashi wa</span> ima, <span class='predicate'>shufu desu</span>. <span class='subject'>Kodomo ga</span> <span class='predicate'>chiisai</span> toki, <span class='predicate'>isogashikatta desu</span> ga, ima, sukoshi jikan ga <span class='predicate'>arimasu</span>.",
+      "hira": "<span class='subject'>わたしは</span> いま、<span class='predicate'>しゅふです</span>。 <span class='subject'>こどもが</span> <span class='predicate'>ちいさい</span>とき、<span class='predicate'>いそがしかったです</span>が、いま、すこし じかんが <span class='predicate'>あります</span>。",
+      "kata": "<span class='subject'>わたしは</span> いま、<span class='predicate'>しゅふです</span>。 <span class='subject'>こどもが</span> <span class='predicate'>ちいさい</span>とき、<span class='predicate'>いそがしかったです</span>が、いま、すこし じかんが <span class='predicate'>あります</span>。",
+      "rubi": "<span class='subject'>わたしは</span><ruby><rb>今</rb><rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<span class='predicate'><ruby><rb>主婦</rb><rp>(</rp><rt>しゅふ</rt><rp>)</rp></ruby>です</span>。<span class='subject'><ruby><rb>子</rb><rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもが</span><span class='predicate'><ruby><rb>小</rb><rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さい</span>とき、<span class='predicate'><ruby><rb>忙</rb><rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったです</span>が、<ruby><rb>今</rb><rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、すこし<ruby><rb>時間</rb><rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>が<span class='predicate'>あります</span>。",
+      "kanji": "<span class='subject'>わたしは</span>今、<span class='predicate'>主婦です</span>。<span class='subject'>子どもが</span><span class='predicate'>小さい</span>とき、<span class='predicate'>忙しかったですが</span>、今、少し時間が<span class='predicate'>あります</span>。"
     },
     {
-      "alphabet": "<span class='object'>Heasutairu no zasshi o</span> <span class='predicate'>mimasu</span>.",
-      "hira": "ひまなとき、<span class='object'>ヘアスタイルの ざっしを</span> <span class='predicate'>みます</span>。",
-      "kata": "ひまなとき、<span class='object'>ヘアスタイルの ざっしを</span> <span class='predicate'>みます</span>。",
-      "rubi": "<ruby><rb>暇</rb><rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なとき、<span class='object'>ヘアスタイルの<ruby><rb>雑誌</rb><rp>(</rp><rt>ざっし</rt><rp>)</rp></ruby>を</span><span class='predicate'><ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます</span>。",
-      "kanji": "暇なとき、<span class='object'>ヘアスタイルの雑誌を</span><span class='predicate'>見ます</span>。"
+      "alphabet": "Himana toki, heasutairu no <span class='object'>zasshi o</span> <span class='predicate'>mimasu</span>.",
+      "hira": "ひまなとき、へあすたいるの <span class='object'>ざっしを</span> <span class='predicate'>みます</span>。",
+      "kata": "ひまなとき、ヘアスタイルの <span class='object'>ざっしを</span> <span class='predicate'>みます</span>。",
+      "rubi": "<ruby><rb>暇</rb><rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なとき、ヘアスタイルの<span class='object'><ruby><rb>雑誌</rb><rp>(</rp><rt>ざっし</rt><rp>)</rp></ruby>を</span><span class='predicate'><ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます</span>。",
+      "kanji": "暇なとき、ヘアスタイルの<span class='object'>雑誌を</span><span class='predicate'>見ます</span>。"
     },
     {
-      "alphabet": "Ima, <span class='subject'>watashi ga</span> <span class='predicate'>kirimasu</span>.",
+      "alphabet": "Ima, otto to kodomo tachi no <span class='object'>kami wa</span> <span class='subject'>watashi ga</span> <span class='predicate'>kirimasu</span>.",
       "hira": "いま、おっとと こどもたちの <span class='object'>かみは</span> <span class='subject'>わたしが</span> <span class='predicate'>きります</span>。",
       "kata": "いま、おっとと こどもたちの <span class='object'>かみは</span> <span class='subject'>わたしが</span> <span class='predicate'>きります</span>。",
       "rubi": "<ruby><rb>今</rb><rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby><rb>夫</rb><rp>(</rp><rt>おっと</rt><rp>)</rp></ruby>と<ruby><rb>子</rb><rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもたちの<span class='object'><ruby><rb>髪</rb><rp>(</rp><rt>かみ</rt><rp>)</rp></ruby>は</span><span class='subject'>わたしが</span><span class='predicate'><ruby><rb>切</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ります</span>。",
       "kanji": "今、夫と子どもたちの<span class='object'>髪は</span><span class='subject'>わたしが</span><span class='predicate'>切ります</span>。"
     },
     {
-      "alphabet": "Demo, <span class='subject'>watashi wa</span> <span class='object'>okyakusan no kami ga</span> <span class='predicate'>kiritai desu</span>.",
-      "hira": "でも、<span class='subject'>わたしは</span> <span class='object'>おきゃくさんの かみが</span> <span class='predicate'>きりたいです</span>。",
-      "kata": "でも、<span class='subject'>わたしは</span> <span class='object'>おきゃくさんの かみが</span> <span class='predicate'>きりたいです</span>。",
+      "alphabet": "Demo, <span class='subject'>watashi wa</span> okyakusan no <span class='object'>kami ga</span> <span class='predicate'>kiritai desu</span>.",
+      "hira": "でも、<span class='subject'>わたしは</span> おきゃくさんの <span class='object'>かみが</span> <span class='predicate'>きりたいです</span>。",
+      "kata": "でも、<span class='subject'>わたしは</span> おきゃくさんの <span class='object'>かみが</span> <span class='predicate'>きりたいです</span>。",
       "rubi": "でも、<span class='subject'>わたしは</span>お<ruby><rb>客</rb><rp>(</rp><rt>きゃく</rt><rp>)</rp></ruby>さんの<span class='object'><ruby><rb>髪</rb><rp>(</rp><rt>かみ</rt><rp>)</rp></ruby>が</span><span class='predicate'><ruby><rb>切</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>りたいです</span>。",
       "kanji": "でも、<span class='subject'>わたしは</span>お客さんの<span class='object'>髪が</span><span class='predicate'>切りたいです</span>。"
     },
     {
-      "alphabet": "Nihon de <span class='object'>biyooshi no shigoto ga</span> <span class='predicate'>shitai desu</span>.",
-      "hira": "にほんで <span class='object'>びようしの しごとが</span> <span class='predicate'>したいです</span>。",
-      "kata": "にほんで <span class='object'>びようしの しごとが</span> <span class='predicate'>したいです</span>。",
-      "rubi": "<ruby><rb>日本</rb><rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>で<span class='object'><ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>の<ruby><rb>仕事</rb><rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>が</span><span class='predicate'>したいです</span>。",
-      "kanji": "日本で<span class='object'>美容師の仕事が</span><span class='predicate'>したいです</span>。"
+      "alphabet": "Nihon de biyooshi no <span class='object'>shigoto ga</span> <span class='predicate'>shitai desu</span>.",
+      "hira": "にほんで びようしの <span class='object'>しごとが</span> <span class='predicate'>したいです</span>。",
+      "kata": "にほんで びようしの <span class='object'>しごとが</span> <span class='predicate'>したいです</span>。",
+      "rubi": "<ruby><rb>日本</rb><rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>で<ruby><rb>美容師</rb><rp>(</rp><rt>びようし</rt><rp>)</rp></ruby>の<span class='object'><ruby><rb>仕事</rb><rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>が</span><span class='predicate'>したいです</span>。",
+      "kanji": "日本で美容師の<span class='object'>仕事が</span><span class='predicate'>したいです</span>。"
     }
   ],
   "52":[
