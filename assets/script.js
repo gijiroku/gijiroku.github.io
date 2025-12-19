@@ -34,7 +34,8 @@ navContent.ja=`
 </ul>
 <h2>情報共有</h2>
 <ul>
-<li><a href="/report/gakushuusha-genshou-taisaku">251213学習者減少対策案</a></li>
+<li><a href="/report/251219">251219新規支援者への配慮：No.5の案</a></li>
+<li><a href="/report/gakushuusha-genshou-taisaku">251213学習者減少対策：No.5の案</a></li>
 <li><a href="/report/250727">250727代表に対するNo.5の所感</a></li>
 <li><a href="/report/250625">250625mail 役人</a></li>
 <li><a href="/report/250609">250609mail 役人とNo.5</a></li>
