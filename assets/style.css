@@ -120,6 +120,9 @@ html[lang="ja"]{
     margin-top:2rem;
   }
 }
+#loading{
+  text-align:center;
+}
 .pageDatetime:not(html[lang="ja"] .pageDatetime){
   d-isplay:none;
 }
@@ -282,12 +285,17 @@ ul:not(.sentences){
 }
 li:not(.isTransparent){
   .subject,
+  .grammaticalSubject,
   .predicate,
   .object{
     text-decoration:solid underline 2px;
     text-underline-offset:.4rem;
   }
-  .subject{
+  .grammaticalSubject{
+    text-decoration:dotted underline 2px;
+  }
+  .subject,
+  .grammaticalSubject{
     text-decoration-color:red;
   }
   .predicate{
